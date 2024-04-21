@@ -1,0 +1,36 @@
+.footer {
+  margin: 0 0 60px;
+}
+
+.footer__copyrigth {
+  width: 100%;
+  max-width: 318px;
+  font-size: 1.125rem;
+  line-height: 1.36125rem;
+  color: #545454;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    margin: 0 0 60px 95px;
+  }
+
+  .footer__copyrigth {
+    width: 100%;
+    max-width: 318px;
+    font-size: 1.125rem;
+    line-height: 1.36125rem;
+    color: #545454;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .footer {
+    margin: 0 0 25px 20px;
+  }
+  .footer__copyrigth {
+    max-width: 282px;
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+}

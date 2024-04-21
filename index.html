@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Natalia Bacarini" />
+    <meta name="description" content="Rede Social" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <link rel="stylesheet" href="./pages/index.css" />
+
+    <title>Around The U.S.</title>
+  </head>
+
+  <body>
+    <div class="page">
+      <header class="header">
+        <img
+          src="./images/logo.svg"
+          alt="Around The U.S. logo"
+          class="header__logo"
+        />
+      </header>
+
+      <main class="content">
+        <section class="profile">
+          <img
+            src="./images/avatar_profile.jpg"
+            alt="homem idoso sorrindo"
+            class="profile__avatar"
+          />
+          <div class="profile__information">
+            <div class="profile__informations">
+              <h1 class="profile__name">Jacques Cousteau</h1>
+              <button class="profile__name-button">
+                <img
+                  src="./images/pen.svg"
+                  alt="desenho de uma caneta branca"
+                  class="profile__name-button-image"
+                />
+              </button>
+            </div>
+            <p class="profile__bio">Explorador</p>
+          </div>
+          <button class="profile__add-picture-button">
+            <img
+              src="./images/plus.svg"
+              alt="icone de sinal de mais"
+              class="profile__add-picture-button-image"
+            />
+          </button>
+        </section>
+
+        <section class="gallery">
+          <div class="gallery__cards">
+            <div class="gallery__card">
+              <img
+                src="./images/1_vale_de_yosemite.jpg"
+                alt="imagem de um rio com pinheiros e uma montanha ao fundo"
+                class="gallery__card-picture"
+              />
+              <div class="gallery__card-information">
+                <h2 class="gallery__card-name">Vale de Yosemite</h2>
+                <button class="gallery__card-button">
+                  <img
+                    src="./images/like.svg"
+                    alt="imagem de um coração"
+                    class="gallery_card-button-image"
+                  />
+                </button>
+              </div>
+            </div>
+
+            <div class="gallery__card">
+              <img
+                src="./images/2_lago_louise.jpg"
+                alt="um grande lado com montanhas com neve ao fundo"
+                class="gallery__card-picture"
+              />
+              <div class="gallery__card-information">
+                <h2 class="gallery__card-name">Lago Louise</h2>
+                <button class="gallery__card-button">
+                  <img
+                    src="./images/like.svg"
+                    alt="imagem de um coração"
+                    class="gallery_card-button-image"
+                  />
+                </button>
+              </div>
+            </div>
+
+            <div class="gallery__card">
+              <img
+                src="./images/3_montanhas_care.jpg"
+                alt="montanhas com pôr do sol"
+                class="gallery__card-picture"
+              />
+              <div class="gallery__card-information">
+                <h2 class="gallery__card-name">Montanhas Caree</h2>
+                <button class="gallery__card-button">
+                  <img
+                    src="./images/like.svg"
+                    alt="imagem de um coração"
+                    class="gallery_card-button-image"
+                  />
+                </button>
+              </div>
+            </div>
+
+            <div class="gallery__card">
+              <img
+                src="./images/4_latemar.jpg"
+                alt="montanhas com um noite estrelada ao fundo"
+                class="gallery__card-picture"
+              />
+              <div class="gallery__card-information">
+                <h2 class="gallery__card-name">Latemar</h2>
+                <button class="gallery__card-button">
+                  <img
+                    src="./images/like.svg"
+                    alt="imagem de um coração"
+                    class="gallery_card-button-image"
+                  />
+                </button>
+              </div>
+            </div>
+
+            <div class="gallery__card">
+              <img
+                src="./images/5_parque_nacional.jpg"
+                alt="beira de um grande lado e com montanhas e neve ao fundo"
+                class="gallery__card-picture"
+              />
+              <div class="gallery__card-information">
+                <h2 class="gallery__card-name">Parque Nacional da Vanoise</h2>
+                <button class="gallery__card-button">
+                  <img
+                    src="./images/like.svg"
+                    alt="imagem de um coração"
+                    class="gallery_card-button-image"
+                  />
+                </button>
+              </div>
+            </div>
+
+            <div class="gallery__card">
+              <img
+                src="./images/6_lago_di_braies.jpg"
+                alt="um lago com barcos em um deck e montanhas com neve ao fundo"
+                class="gallery__card-picture"
+              />
+              <div class="gallery__card-information">
+                <h2 class="gallery__card-name">Lago di Braies</h2>
+                <button class="gallery__card-button">
+                  <img
+                    src="./images/like.svg"
+                    alt="imagem de um coração"
+                    class="gallery_card-button-image"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p class="footer__copyrigth">&copy; 2024 Around The U.S.</p>
+      </footer>
+    </div>
+
+    <div class="popup">
+      <div class="popup__page">
+        <h2 class="popup__title">Editar Perfil</h2>
+        <form class="popup__container">
+          <fieldset class="popup__fieldset">
+            <label class="popup__name" for="name"
+              >Nome
+              <input
+                class="popup__input"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Nome"
+              />
+            </label>
+
+            <label class="popup__about-me" for="about-me"
+              >Nome
+              <inpu
+                class="popup__input"
+                type="text"
+                id="about-me"
+                name="about-me"
+                placeholder="Sobre mim"
+              />
+            </label>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

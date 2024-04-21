@@ -1,12 +1,4 @@
 @font-face {
-  font-family: "InterVariable";
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url("./Fonts/InterVariable.woff2") format("woff2");
-}
-
-@font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -17,23 +9,15 @@
 @font-face {
   font-family: "Inter";
   font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./Fonts/Inter-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
   font-weight: 900;
   font-display: swap;
   src: url("./Fonts/Inter-Black.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "InterDisplay";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("./Fonts/InterDisplay-Regular.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "InterDisplay";
-  font-style: normal;
-  font-weight: 900;
-  font-display: swap;
-  src: url("./Fonts/InterDisplay-Black.woff2") format("woff2");
 }
