@@ -166,36 +166,45 @@
       <footer class="footer">
         <p class="footer__copyrigth">&copy; 2024 Around The U.S.</p>
       </footer>
-    </div>
 
-    <div class="popup">
-      <div class="popup__page">
-        <h2 class="popup__title">Editar Perfil</h2>
-        <form class="popup__container">
-          <fieldset class="popup__fieldset">
-            <label class="popup__name" for="name"
-              >Nome
-              <input
-                class="popup__input"
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Nome"
-              />
-            </label>
+      <div class="popup">
+        <div class="popup__container">
+          <img
+            src="./images/close_icon.svg"
+            alt="x para fechar a tela"
+            class="popup__close-button"
+          />
+          <h2 class="popup__title">Editar Perfil</h2>
+          <form class="popup__form">
+            <fieldset class="popup__fieldset">
+              <label class="popup__information" for="name">
+                <input
+                  class="popup__input"
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Nome"
+                  value="Jacques Cousteau"
+                />
+              </label>
 
-            <label class="popup__about-me" for="about-me"
-              >Nome
-              <inpu
-                class="popup__input"
-                type="text"
-                id="about-me"
-                name="about-me"
-                placeholder="Sobre mim"
-              />
-            </label>
-          </fieldset>
-        </form>
+              <label class="popup__information" for="about-me">
+                <input
+                  class="popup__input"
+                  type="text"
+                  id="about-me"
+                  name="about-me"
+                  placeholder="Sobre mim"
+                  value="Explorador"
+                />
+              </label>
+
+              <button class="popup__button" type="submit">
+                <p class="popup__button-text">Salvar</p>
+              </button>
+            </fieldset>
+          </form>
+        </div>
       </div>
     </div>
   </body>
