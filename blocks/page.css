@@ -15,12 +15,6 @@
   }
 }
 
-@media only screen and (max-width: 425px) {
-  .page {
-    padding: 0;
-  }
-}
-
 @media only screen and (max-width: 320px) {
   .page {
     padding: 0;
