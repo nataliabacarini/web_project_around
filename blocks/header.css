@@ -18,6 +18,13 @@
   }
 }
 
+@media only screen and (max-width: 425px) {
+  .header__logo {
+    width: 126px;
+    margin: 28px auto 32px 25px;
+  }
+}
+
 @media only screen and (max-width: 320px) {
   .header__logo {
     width: 126px;
