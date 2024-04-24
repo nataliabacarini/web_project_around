@@ -33,7 +33,6 @@
   font-size: 2.625rem;
   line-height: 3rem;
   margin: 0 0 16px;
-
   white-space: nowrap;
 }
 
@@ -56,7 +55,7 @@
   height: 10px;
 }
 
-.profile__bio {
+.profile__about {
   width: 100%;
   max-width: 415px;
   font-weight: 400;
@@ -121,7 +120,7 @@
     height: 6px;
   }
 
-  .profile__bio {
+  .profile__about {
     max-width: 300px;
     font-size: 0.75rem;
     line-height: 1rem;
@@ -177,7 +176,7 @@
     height: 7.5px;
   }
 
-  .profile__bio {
+  .profile__about {
     max-width: 282px;
     font-size: 0.875rem;
     line-height: 1.05875rem;
