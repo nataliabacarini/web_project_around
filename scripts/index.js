@@ -10,7 +10,6 @@ const aboutUser = document.querySelector(".profile__about");
 
 const formSubmit = document.querySelector(".popup__form");
 
-console.log("NATALIA");
 function changeDisplayToBlock() {
   popupForm.classList.add("popup__opened");
   nameInput.value = nameUser.textContent;
@@ -26,8 +25,10 @@ closeButton.addEventListener("click", changeDisplayToNone);
 
 function saveNewInputValues(event) {
   event.preventDefault();
-  nameUser.textContent = nameInput.value;
-  aboutUser.textContent = aboutInput.value;
+  if (nameInput.value != "" && aboutInput.value != "") {
+    nameUser.textContent = nameInput.value;
+    aboutUser.textContent = aboutInput.value;
+  }
   changeDisplayToNone();
 }
 
