@@ -9,13 +9,13 @@
   position: relative;
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .page {
     padding: 0 50px;
   }
 }
 
-@media only screen and (max-width: 320px) {
+@media screen and (max-width: 430px) {
   .page {
     padding: 0;
   }

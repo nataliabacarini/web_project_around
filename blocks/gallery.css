@@ -64,7 +64,7 @@
   height: 19px;
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .gallery {
     margin: 45px auto 50px;
   }
@@ -100,7 +100,7 @@
   }
 }
 
-@media only screen and (max-width: 320px) {
+@media screen and (max-width: 430px) {
   .gallery {
     margin: 50px auto 67px;
   }
@@ -147,21 +147,5 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-  }
-
-  .gallery__card-button {
-    padding: 0;
-    border: none;
-    background-color: #fff;
-  }
-
-  .gallery__card-button:hover {
-    cursor: pointer;
-    opacity: 50%;
-  }
-
-  .gallery_card-button-image {
-    width: 21px;
-    height: 19px;
   }
 }
