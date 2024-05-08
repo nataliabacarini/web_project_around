@@ -10,18 +10,33 @@ const aboutUser = document.querySelector(".profile__about");
 
 const formSubmit = document.querySelector(".popup__form");
 
-function changeDisplayToBlock() {
-  popupForm.classList.add("popup__opened");
-  nameInput.value = nameUser.textContent;
-  aboutInput.value = aboutUser.textContent;
+const popupFormImage = document.querySelector(".popup__image");
+const addButtonImage = document.querySelector(".profile__add-picture-button");
+const closeButtonImage = document.querySelector(".popup__close-button-image");
+
+const titleImageInput = document.querySelector(".popup__title-image");
+const linkImageInput = document.querySelector(".popup__link-image");
+
+const addCard = document.querySelector(".gallery__cards");
+
+function changeDisplayToBlock(popup, popupOpenedClass) {
+  popup.classList.add(popupOpenedClass);
+  if (popupOpenedClass == "popup__opened") {
+    nameInput.value = nameUser.textContent;
+    aboutInput.value = aboutUser.textContent;
+  }
 }
 
-function changeDisplayToNone() {
-  popupForm.classList.remove("popup__opened");
+function changeDisplayToNone(popup, popupOpenedClass) {
+  popup.classList.remove(popupOpenedClass);
 }
 
-editButton.addEventListener("click", changeDisplayToBlock);
-closeButton.addEventListener("click", changeDisplayToNone);
+editButton.addEventListener("click", () =>
+  changeDisplayToBlock(popupForm, "popup__opened")
+);
+closeButton.addEventListener("click", () =>
+  changeDisplayToNone(popupForm, "popup__opened")
+);
 
 function saveNewInputValues(event) {
   event.preventDefault();
@@ -33,3 +48,10 @@ function saveNewInputValues(event) {
 }
 
 formSubmit.addEventListener("submit", saveNewInputValues);
+
+addButtonImage.addEventListener("click", () =>
+  changeDisplayToBlock(popupFormImage, "popup__image-opened")
+);
+closeButtonImage.addEventListener("click", () =>
+  changeDisplayToNone(popupFormImage, "popup__image-opened")
+);

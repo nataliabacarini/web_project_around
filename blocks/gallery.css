@@ -14,10 +14,20 @@
 }
 
 .gallery__card {
+  position: relative;
   width: 100%;
   max-width: 282px;
   display: flex;
   flex-direction: column;
+}
+
+.gallery__trash-button {
+  padding: 0;
+  width: 18px;
+  height: 19.13px;
+  position: absolute;
+  top: 18px;
+  right: 15px;
 }
 
 .gallery__card-picture {
