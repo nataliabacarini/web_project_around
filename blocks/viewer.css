@@ -1,0 +1,36 @@
+.viewer__image-opened {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.viewer__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 75vw;
+  width: auto;
+  height: auto;
+  padding: 0;
+  position: relative;
+}
+
+.viewer__content {
+  display: flex;
+}
+
+.viewer__picture {
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+  height: 600px;
+}
+
+.viewer__title {
+  font-size: 0.75rem;
+  line-height: 0.9075rem;
+  color: #fff;
+  position: absolute;
+  bottom: -25px;
+  margin: 0;
+}

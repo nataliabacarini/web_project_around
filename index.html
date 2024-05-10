@@ -51,151 +51,34 @@
         </section>
 
         <section class="gallery">
-          <div class="gallery__cards">
-            <div class="gallery__card">
-              <img
-                src="./images/trash.svg"
-                alt="icone de lixeira"
-                class="gallery__trash-button"
-              />
-              <img
-                src="./images/1_vale_de_yosemite.jpg"
-                alt="imagem de um rio com pinheiros e uma montanha ao fundo"
-                class="gallery__card-picture"
-              />
-              <div class="gallery__card-information">
-                <h2 class="gallery__card-name">Vale de Yosemite</h2>
-                <button class="gallery__card-button">
-                  <img
-                    src="./images/like.svg"
-                    alt="imagem de um coração"
-                    class="gallery__card-button-image"
-                  />
-                </button>
-              </div>
-            </div>
-
-            <div class="gallery__card">
-              <img
-                src="./images/trash.svg"
-                alt="icone de lixeira"
-                class="gallery__trash-button"
-              />
-              <img
-                src="./images/2_lago_louise.jpg"
-                alt="um grande lado com montanhas com neve ao fundo"
-                class="gallery__card-picture"
-              />
-              <div class="gallery__card-information">
-                <h2 class="gallery__card-name">Lago Louise</h2>
-                <button class="gallery__card-button">
-                  <img
-                    src="./images/like.svg"
-                    alt="imagem de um coração"
-                    class="gallery__card-button-image"
-                  />
-                </button>
-              </div>
-            </div>
-
-            <div class="gallery__card">
-              <img
-                src="./images/trash.svg"
-                alt="icone de lixeira"
-                class="gallery__trash-button"
-              />
-              <img
-                src="./images/3_montanhas_care.jpg"
-                alt="montanhas com pôr do sol"
-                class="gallery__card-picture"
-              />
-              <div class="gallery__card-information">
-                <h2 class="gallery__card-name">Montanhas Caree</h2>
-                <button class="gallery__card-button">
-                  <img
-                    src="./images/like.svg"
-                    alt="imagem de um coração"
-                    class="gallery__card-button-image"
-                  />
-                </button>
-              </div>
-            </div>
-
-            <div class="gallery__card">
-              <img
-                src="./images/trash.svg"
-                alt="icone de lixeira"
-                class="gallery__trash-button"
-              />
-              <img
-                src="./images/4_latemar.jpg"
-                alt="montanhas com um noite estrelada ao fundo"
-                class="gallery__card-picture"
-              />
-              <div class="gallery__card-information">
-                <h2 class="gallery__card-name">Latemar</h2>
-                <button class="gallery__card-button">
-                  <img
-                    src="./images/like.svg"
-                    alt="imagem de um coração"
-                    class="gallery__card-button-image"
-                  />
-                </button>
-              </div>
-            </div>
-
-            <div class="gallery__card">
-              <img
-                src="./images/trash.svg"
-                alt="icone de lixeira"
-                class="gallery__trash-button"
-              />
-              <img
-                src="./images/5_parque_nacional.jpg"
-                alt="beira de um grande lado e com montanhas e neve ao fundo"
-                class="gallery__card-picture"
-              />
-              <div class="gallery__card-information">
-                <h2 class="gallery__card-name">Parque Nacional da Vanoise</h2>
-                <button class="gallery__card-button">
-                  <img
-                    src="./images/like.svg"
-                    alt="imagem de um coração"
-                    class="gallery__card-button-image"
-                  />
-                </button>
-              </div>
-            </div>
-
-            <div class="gallery__card">
-              <img
-                src="./images/trash.svg"
-                alt="icone de lixeira"
-                class="gallery__trash-button"
-              />
-              <img
-                src="./images/6_lago_di_braies.jpg"
-                alt="um lago com barcos em um deck e montanhas com neve ao fundo"
-                class="gallery__card-picture"
-              />
-              <div class="gallery__card-information">
-                <h2 class="gallery__card-name">Lago di Braies</h2>
-                <button class="gallery__card-button">
-                  <img
-                    src="./images/like.svg"
-                    alt="imagem de um coração"
-                    class="gallery__card-button-image"
-                  />
-                </button>
-              </div>
-            </div>
-          </div>
+          <ul class="gallery__cards"></ul>
         </section>
       </main>
 
       <footer class="footer">
         <p class="footer__copyrigth">&copy; 2024 Around The U.S.</p>
       </footer>
+
+      <template id="template">
+        <li class="gallery__card">
+          <img
+            src="./images/trash.svg"
+            alt="icone de lixeira"
+            class="gallery__trash-button"
+          />
+          <img src="" alt="" class="gallery__image" />
+          <div class="gallery__card-information">
+            <h2 class="gallery__card-name"></h2>
+            <button class="gallery__like-button">
+              <img
+                src="./images/like.svg"
+                alt="imagem de um coração"
+                class="gallery__like-button-image"
+              />
+            </button>
+          </div>
+        </li>
+      </template>
 
       <div class="popup">
         <div class="popup__container">
@@ -208,7 +91,7 @@
           <form class="popup__form">
             <fieldset class="popup__fieldset">
               <input
-                class="popup__name"
+                class="popup__style-placeholder popup__name"
                 type="text"
                 id="name"
                 name="name"
@@ -217,7 +100,7 @@
               />
 
               <input
-                class="popup__about"
+                class="popup__style-placeholder popup__about"
                 type="text"
                 id="about"
                 name="about"
@@ -230,18 +113,18 @@
         </div>
       </div>
 
-      <div class="popup__image">
+      <div class="popup popup__image">
         <div class="popup__container">
           <img
             src="./images/close_icon.svg"
             alt="x para fechar a tela"
-            class="popup__close-button-image"
+            class="popup__close-button popup__close-button-image"
           />
           <h2 class="popup__title">Novo local</h2>
-          <form class="popup__form">
+          <form class="popup__form popup__image-form">
             <fieldset class="popup__fieldset">
               <input
-                class="popup__title-image"
+                class="popup__style-placeholder popup__title-image"
                 type="text"
                 id="name"
                 name="name"
@@ -249,7 +132,7 @@
               />
 
               <input
-                class="popup__link-image"
+                class="popup__style-placeholder popup__link-image"
                 type="text"
                 id="image"
                 name="image"
@@ -258,6 +141,24 @@
             </fieldset>
             <button class="popup__save-button" type="submit">Criar</button>
           </form>
+        </div>
+      </div>
+
+      <div class="popup viewer-image">
+        <div class="viewer__container">
+          <img
+            src="./images/close_icon.svg"
+            alt="x para fechar a tela"
+            class="popup__close-button viewer__close-button"
+          />
+          <div class="viewer__content">
+            <img
+              src="https://practicum-content.s3.us-west-1.amazonaws.com/web-code/moved_yosemite.jpg"
+              alt=""
+              class="viewer__picture"
+            />
+            <p class="viewer__title">texto</p>
+          </div>
         </div>
       </div>
     </div>
