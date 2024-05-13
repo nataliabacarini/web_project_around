@@ -16,7 +16,7 @@
   position: relative;
 }
 
-.viewer__content {
+.viewer__image-content {
   display: flex;
 }
 
@@ -27,7 +27,7 @@
   max-height: 600px;
 }
 
-.viewer__title {
+.viewer__image-title {
   font-size: 0.75rem;
   line-height: 0.9075rem;
   color: #fff;
