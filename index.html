@@ -146,22 +146,20 @@
         </div>
       </div>
 
-      <div class="popup">
-        <div class="viewer viewer-image">
-          <div class="viewer__container">
+      <div class="popup popup-viewer-image">
+        <div class="popup-viewer__container">
+          <img
+            src="./images/close_icon.svg"
+            alt="x para fechar a tela"
+            class="popup__close-button popup-viewer__close-button"
+          />
+          <div class="popup-viewer__content">
             <img
-              src="./images/close_icon.svg"
-              alt="x para fechar a tela"
-              class="popup__close-button viewer__close-button"
+              src="https://practicum-content.s3.us-west-1.amazonaws.com/web-code/moved_yosemite.jpg"
+              alt=""
+              class="popup-viewer__picture"
             />
-            <div class="viewer__content">
-              <img
-                src="https://practicum-content.s3.us-west-1.amazonaws.com/web-code/moved_yosemite.jpg"
-                alt=""
-                class="viewer__picture"
-              />
-              <p class="viewer__title">texto</p>
-            </div>
+            <p class="popup-viewer__title">texto</p>
           </div>
         </div>
       </div>

@@ -13,8 +13,8 @@ const titleImageInput = document.querySelector(".popup__title-image");
 const linkImageInput = document.querySelector(".popup__link-image");
 const cardsContainer = document.querySelector(".gallery__cards");
 const popupFormCard = document.querySelector(".popup__image-form");
-const popupViewer = document.querySelector(".viewer-image");
-const closeButtonViewer = document.querySelector(".viewer__close-button");
+const popupViewer = document.querySelector(".popup-viewer-image");
+const closeButtonViewer = document.querySelector(".popup-viewer__close-button");
 const initialCards = [
   {
     name: "Vale de Yosemite",
@@ -106,16 +106,16 @@ function createCard(card) {
     .querySelector(".gallery__image")
     .addEventListener("click", function (event) {
       const image = event.target;
-      popupViewer.classList.add("viewer__image-opened");
+      popupViewer.classList.add("popup-viewer__image-opened");
       const imageSource = image.getAttribute("src");
       const imageAlt = image.getAttribute("alt");
-      const viewerPicture = document.querySelector(".viewer__picture");
+      const viewerPicture = document.querySelector(".popup-viewer__picture");
       viewerPicture.setAttribute("src", imageSource);
       viewerPicture.setAttribute("alt", imageAlt);
-      const imageTitle = document.querySelector(".viewer__title");
+      const imageTitle = document.querySelector(".popup-viewer__title");
       imageTitle.textContent = card.name;
       closeButtonViewer.addEventListener("click", () =>
-        changeDisplayToNone(popupViewer, "viewer__image-opened")
+        changeDisplayToNone(popupViewer, "popup-viewer__image-opened")
       );
     });
   return cardItem;
