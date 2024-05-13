@@ -113,51 +113,55 @@
         </div>
       </div>
 
-      <div class="popup popup__image">
-        <div class="popup__container">
-          <img
-            src="./images/close_icon.svg"
-            alt="x para fechar a tela"
-            class="popup__close-button popup__close-button-image"
-          />
-          <h2 class="popup__title">Novo local</h2>
-          <form class="popup__form popup__image-form">
-            <fieldset class="popup__fieldset">
-              <input
-                class="popup__style-placeholder popup__title-image"
-                type="text"
-                id="title"
-                name="name"
-                placeholder="Título"
-              />
+      <div class="popup">
+        <div class="popup__image">
+          <div class="popup__container">
+            <img
+              src="./images/close_icon.svg"
+              alt="x para fechar a tela"
+              class="popup__close-button popup__close-button-image"
+            />
+            <h2 class="popup__title">Novo local</h2>
+            <form class="popup__form popup__image-form">
+              <fieldset class="popup__fieldset">
+                <input
+                  class="popup__style-placeholder popup__title-image"
+                  type="text"
+                  id="title"
+                  name="name"
+                  placeholder="Título"
+                />
 
-              <input
-                class="popup__style-placeholder popup__link-image"
-                type="text"
-                id="image"
-                name="image"
-                placeholder="Link de imagem"
-              />
-            </fieldset>
-            <button class="popup__save-button" type="submit">Criar</button>
-          </form>
+                <input
+                  class="popup__style-placeholder popup__link-image"
+                  type="text"
+                  id="image"
+                  name="image"
+                  placeholder="Link de imagem"
+                />
+              </fieldset>
+              <button class="popup__save-button" type="submit">Criar</button>
+            </form>
+          </div>
         </div>
       </div>
 
-      <div class="popup viewer-image">
-        <div class="viewer__container">
-          <img
-            src="./images/close_icon.svg"
-            alt="x para fechar a tela"
-            class="popup__close-button viewer__close-button"
-          />
-          <div class="viewer__content">
+      <div class="popup">
+        <div class="viewer-image">
+          <div class="viewer__container">
             <img
-              src="https://practicum-content.s3.us-west-1.amazonaws.com/web-code/moved_yosemite.jpg"
-              alt=""
-              class="viewer__picture"
+              src="./images/close_icon.svg"
+              alt="x para fechar a tela"
+              class="popup__close-button viewer__close-button"
             />
-            <p class="viewer__title">texto</p>
+            <div class="viewer__content">
+              <img
+                src="https://practicum-content.s3.us-west-1.amazonaws.com/web-code/moved_yosemite.jpg"
+                alt=""
+                class="viewer__picture"
+              />
+              <p class="viewer__title">texto</p>
+            </div>
           </div>
         </div>
       </div>
