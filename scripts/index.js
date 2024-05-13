@@ -112,7 +112,7 @@ function createCard(card) {
       const viewerPicture = document.querySelector(".viewer__picture");
       viewerPicture.setAttribute("src", imageSource);
       viewerPicture.setAttribute("alt", imageAlt);
-      const imageTitle = document.querySelector(".viewer__image-title");
+      const imageTitle = document.querySelector(".viewer__title");
       imageTitle.textContent = card.name;
       closeButtonViewer.addEventListener("click", () =>
         changeDisplayToNone(popupViewer, "viewer__image-opened")
