@@ -1,4 +1,4 @@
-.popup-viewer__image-opened {
+.popup-viewer__opened {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -16,7 +16,7 @@
   position: relative;
 }
 
-.popup-viewer__image-content {
+.popup-viewer__content {
   display: flex;
 }
 
@@ -27,7 +27,7 @@
   max-height: 600px;
 }
 
-.popup-viewer__image-title {
+.popup-viewer__title {
   font-size: 0.75rem;
   line-height: 0.9075rem;
   color: #fff;

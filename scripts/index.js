@@ -13,7 +13,7 @@ const titleImageInput = document.querySelector(".popup__title-image");
 const linkImageInput = document.querySelector(".popup__link-image");
 const cardsContainer = document.querySelector(".gallery__cards");
 const popupFormCard = document.querySelector(".popup__image-form");
-const popupViewer = document.querySelector(".popup-viewer-image");
+const popupViewer = document.querySelector(".popup-viewer");
 const closeButtonViewer = document.querySelector(".popup-viewer__close-button");
 const initialCards = [
   {
@@ -78,6 +78,9 @@ addButtonImage.addEventListener("click", () =>
 closeButtonImage.addEventListener("click", () =>
   changeDisplayToNone(popupFormImage, "popup__image-opened")
 );
+closeButtonViewer.addEventListener("click", () =>
+  changeDisplayToNone(popupViewer, "popup-viewer__opened")
+);
 
 function createCard(card) {
   const template = document.querySelector("#template");
@@ -106,7 +109,7 @@ function createCard(card) {
     .querySelector(".gallery__image")
     .addEventListener("click", function (event) {
       const image = event.target;
-      popupViewer.classList.add("popup-viewer__image-opened");
+      popupViewer.classList.add("popup-viewer__opened");
       const imageSource = image.getAttribute("src");
       const imageAlt = image.getAttribute("alt");
       const viewerPicture = document.querySelector(".popup-viewer__picture");
@@ -114,10 +117,8 @@ function createCard(card) {
       viewerPicture.setAttribute("alt", imageAlt);
       const imageTitle = document.querySelector(".popup-viewer__title");
       imageTitle.textContent = card.name;
-      closeButtonViewer.addEventListener("click", () =>
-        changeDisplayToNone(popupViewer, "popup-viewer__image-opened")
-      );
     });
+
   return cardItem;
 }
 
@@ -131,6 +132,8 @@ function creatNewcard(event) {
     link: linkImageInput.value,
   });
   cardsContainer.prepend(newCard);
+  titleImageInput.value = "";
+  linkImageInput.value = "";
   changeDisplayToNone(popupFormImage, "popup__image-opened");
 }
 
