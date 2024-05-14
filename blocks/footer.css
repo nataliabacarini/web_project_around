@@ -8,29 +8,10 @@
   font-size: 1.125rem;
   line-height: 1.36125rem;
   color: #545454;
-  margin: 0;
 }
 
 @media screen and (max-width: 768px) {
-  .footer {
-    margin: 0 0 60px 95px;
-  }
 }
 
-@media screen and (max-width: 430px) {
-  .footer {
-    margin: 0 0 25px 60px;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .footer {
-    margin: 0 0 25px 40px;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .footer {
-    margin: 0 0 25px 15px;
-  }
+@media screen and (max-width: 720px) {
 }
