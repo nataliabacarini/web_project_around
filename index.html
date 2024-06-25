@@ -88,7 +88,7 @@
             class="popup__close-button"
           />
           <h2 class="popup__title">Editar Perfil</h2>
-          <form class="popup__form">
+          <form class="popup__form" novalidate>
             <fieldset class="popup__fieldset">
               <input
                 class="popup__placeholder popup__name"
@@ -97,6 +97,7 @@
                 name="name"
                 placeholder="Nome"
                 value="Jacques Cousteau"
+                required
               />
 
               <input
@@ -106,6 +107,7 @@
                 name="about"
                 placeholder="Sobre mim"
                 value="Explorador"
+                required
               />
             </fieldset>
             <button class="popup__save-button" type="submit">Salvar</button>
@@ -121,7 +123,7 @@
             class="popup-image__close-button popup__close-button-image"
           />
           <h2 class="popup-image__title">Novo local</h2>
-          <form class="popup-image__form popup__image-form">
+          <form class="popup-image__form popup__image-form" novalidate>
             <fieldset class="popup-image__fieldset">
               <input
                 class="popup-image__placeholder popup__title-image"
@@ -165,5 +167,6 @@
       </div>
     </div>
     <script src="./scripts/index.js"></script>
+    <script src="./scripts/forms.js"></script>
   </body>
 </html>
