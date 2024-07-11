@@ -60,14 +60,20 @@
   margin: 0;
 }
 
+.popup__label {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin: 0;
+}
+
 .popup__placeholder {
   width: 100%;
   font-size: 0.875rem;
   line-height: 1.05875rem;
   border: none;
-  margin-bottom: 29.74px;
   border-bottom: 1px solid #c4c4c4;
-  padding-bottom: 13.26px;
+  padding-bottom: 11px;
   outline: none;
 }
 
@@ -82,12 +88,32 @@
   font-size: 1.125rem;
   line-height: 1.36125rem;
   text-align: center;
-  margin-top: 18.26px;
+  margin-top: 31.34px;
 }
 
 .popup__save-button:hover {
   cursor: pointer;
   opacity: 60%;
+}
+
+.popup__save-button-disabled {
+  cursor: pointer;
+  opacity: 20%;
+  color: #000;
+  background-color: white;
+  border: 1px solid #000;
+}
+
+.popup__error {
+  font-size: 12px;
+  line-height: 17px;
+  color: red;
+  margin-bottom: 13px;
+}
+
+.popup__error-active {
+  display: flex;
+  margin-top: 0;
 }
 
 @media screen and (max-width: 768px) {

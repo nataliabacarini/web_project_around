@@ -90,15 +90,20 @@
           <h2 class="popup__title">Editar Perfil</h2>
           <form class="popup__form" novalidate>
             <fieldset class="popup__fieldset">
-              <input
-                class="popup__placeholder popup__name"
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Nome"
-                value="Jacques Cousteau"
-                required
-              />
+              <label class="popup__label">
+                <input
+                  class="popup__placeholder popup__name"
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Nome"
+                  value="Jacques Cousteau"
+                  minlength="2"
+                  maxlength="40"
+                  required
+                />
+                <span class="popup__error name-error"></span>
+              </label>
 
               <input
                 class="popup__placeholder popup__about"
@@ -107,8 +112,11 @@
                 name="about"
                 placeholder="Sobre mim"
                 value="Explorador"
+                minlength="2"
+                maxlength="200"
                 required
               />
+              <span class="popup__error about-error"></span>
             </fieldset>
             <button class="popup__save-button" type="submit">Salvar</button>
           </form>
@@ -131,15 +139,21 @@
                 id="title"
                 name="name"
                 placeholder="Título"
+                minlength="2"
+                maxlength="30"
+                required
               />
+              <span class="popup__error title-error"></span>
 
               <input
                 class="popup-image__placeholder popup__link-image"
-                type="text"
+                type="url"
                 id="image"
                 name="image"
                 placeholder="Link de imagem"
+                required
               />
+              <span class="popup__error image-error"></span>
             </fieldset>
             <button class="popup-image__save-button" type="submit">
               Criar
@@ -166,7 +180,7 @@
         </div>
       </div>
     </div>
-    <script src="./scripts/index.js"></script>
-    <script src="./scripts/forms.js"></script>
+    <script src="./scripts/validate-forms.js" defer></script>
+    <script src="./scripts/index.js" defer></script>
   </body>
 </html>
