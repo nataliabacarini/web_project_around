@@ -133,20 +133,21 @@
           <h2 class="popup-image__title">Novo local</h2>
           <form class="popup-image__form popup__image-form" novalidate>
             <fieldset class="popup-image__fieldset">
+              <label class="popup__label">
+                <input
+                  class="popup__placeholder popup__title-image"
+                  type="text"
+                  id="title"
+                  name="name"
+                  placeholder="Título"
+                  minlength="2"
+                  maxlength="30"
+                  required
+                />
+                <span class="popup__error title-error"></span>
+              </label>
               <input
-                class="popup-image__placeholder popup__title-image"
-                type="text"
-                id="title"
-                name="name"
-                placeholder="Título"
-                minlength="2"
-                maxlength="30"
-                required
-              />
-              <span class="popup__error title-error"></span>
-
-              <input
-                class="popup-image__placeholder popup__link-image"
+                class="popup__placeholder popup__link-image"
                 type="url"
                 id="image"
                 name="image"
@@ -155,9 +156,7 @@
               />
               <span class="popup__error image-error"></span>
             </fieldset>
-            <button class="popup-image__save-button" type="submit">
-              Criar
-            </button>
+            <button class="popup__save-button" type="submit">Criar</button>
           </form>
         </div>
       </div>

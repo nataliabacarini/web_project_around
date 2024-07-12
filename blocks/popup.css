@@ -11,10 +11,6 @@
   display: block;
 }
 
-.popup__image-opened {
-  display: block;
-}
-
 .popup__container {
   position: relative;
   width: 100%;
@@ -96,7 +92,7 @@
   opacity: 60%;
 }
 
-.popup__save-button-disabled {
+.popup__save-button-inactive {
   cursor: pointer;
   opacity: 20%;
   color: #000;
