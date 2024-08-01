@@ -1,3 +1,5 @@
+import Card from "./Card.js";
+
 const popupForm = document.querySelector(".popup");
 const editButton = document.querySelector(".profile__edit-button");
 const closeButton = document.querySelector(".popup__close-button");
@@ -82,6 +84,7 @@ closeButtonViewer.addEventListener("click", () =>
   changeDisplayToNone(popupViewer, "popup-viewer__opened")
 );
 
+//como é feito o card
 function createCard(card) {
   const template = document.querySelector("#template");
   const cardItem = template.content
@@ -105,6 +108,8 @@ function createCard(card) {
       }
       return likeButton.setAttribute("src", "./images/like.svg");
     });
+
+  // abre a imagem do card
   cardItem
     .querySelector(".gallery__image")
     .addEventListener("click", function (event) {
@@ -126,6 +131,7 @@ for (const card of initialCards) {
   cardsContainer.prepend(createCard(card));
 }
 
+//cria um novo card
 function creatNewcard(event) {
   const newCard = createCard({
     name: titleImageInput.value,
@@ -145,6 +151,8 @@ popupFormCard.addEventListener("submit", function (event) {
   creatNewcard();
 });
 
+// valida formulario
+import { enableValidation } from "./FormValidator.js";
 enableValidation({
   formSelector: ".popup__form",
   inputSelector: ".popup__placeholder",
