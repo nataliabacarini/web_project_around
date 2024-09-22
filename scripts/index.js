@@ -1,5 +1,6 @@
 import Card from "./Card.js";
 import FormValidator from "./FormValidator.js";
+import Section from "./Section.js";
 import {
   editButton,
   closeButton,
@@ -17,9 +18,21 @@ import {
   popupForm,
   popupFormImage,
   popupViewer,
-  cardsContainer,
   popupFormCard,
 } from "./utils.js";
+
+const section = new Section(
+  {
+    items: initialCards,
+    renderer: (item) => {
+      const newcard = new Card(item, popupViewer);
+      const cardElement = newcard.generate();
+      section.addItem(cardElement);
+    },
+  },
+  ".gallery__cards"
+);
+section.renderItems();
 
 editButton.addEventListener("click", () =>
   changeDisplayToBlock(popupForm, "popup__opened")
@@ -42,10 +55,6 @@ closeButtonImage.addEventListener("click", () =>
 closeButtonViewer.addEventListener("click", () =>
   changeDisplayToNone(popupViewer, "popup-viewer__opened")
 );
-
-for (const cardInfo of initialCards) {
-  cardsContainer.prepend(new Card(cardInfo, popupViewer).generate());
-}
 
 popupFormCard.addEventListener("submit", (event) => {
   controlCardForm(event);
